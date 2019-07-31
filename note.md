@@ -97,4 +97,20 @@
   + 其他
     + `print('', end = '')`表示不换号打印。
     + 制表符：`\t`保持文本垂直方向对齐, `\n`换行。
-    
+## 面向对象
+  + 基础语法
+    1. 采用大骆驼峰命名法。
+    2. 语法：
+       ```
+       class Cat:
+ 
+           def eat(self):
+               print('猫在吃鱼')
+       
+           def drink(self):
+               print('猫在喝水')
+ 
+       tom = Cat()
+       tom.eat()
+       tom.drink()
+       ```
