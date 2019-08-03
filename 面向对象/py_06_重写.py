@@ -1,5 +1,8 @@
 class Anmial():
 
+    def __init__(self, name):
+        self.name = name
+
     def eat(self):
         print('吃')
     
@@ -13,7 +16,7 @@ class Anmial():
 class Dog(Anmial):
 
     def shut(self):
-        print('叫')
+        print('%s在叫' % self.name)
 
 
 class Xiaotianquan(Dog):
@@ -22,10 +25,10 @@ class Xiaotianquan(Dog):
         print('汪')
         super().shut()
 
-ahuang = Dog()
+ahuang = Dog('阿黄')
 ahuang.sleep()
 ahuang.eat()
 ahuang.shut()
 
-xiaotianquan = Xiaotianquan()
+xiaotianquan = Xiaotianquan('阿黄')
 xiaotianquan.shut()

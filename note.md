@@ -121,3 +121,37 @@
     7. 继承：`class Dog(Anmial):`，继承会获得父类以及父类的父类中所有的属性和方法。
     8. 重写：在子类中定义相同的方法可重写父类，可使用`super()`调用父类方法。
     9. 多继承：`class C(A, B)`, 同名属性和方法会使用第一个继承的父类。
+    10. 类属性和方法：
+        ```
+        class Person():
+            count = 0
+ 
+            @classmethod
+            def show_count(cls):
+                print(cls.count)
+            
+            @staticmethod # 静态方法
+            def say_hello():
+                print('你好')
+        
+            def __init__(self, name):
+                self.name = name
+                Person.count += 1
+        ```
+  + 异常
+    1. 捕捉异常：
+       ```
+       try:
+          num = int(input('请输入一个整数'))
+          print(8 / num)
+          except ValueError:
+              print('输入错误')
+          except ZeroDivisionError:
+              print('0错误')
+          except Exception as result:
+              print('未知错误%s' % result)
+          else:
+              print('无异常时执行')
+          finally:
+              print('无论是否异常都会执行')
+       ```
