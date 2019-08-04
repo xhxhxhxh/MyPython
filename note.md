@@ -155,3 +155,28 @@
           finally:
               print('无论是否异常都会执行')
        ```
+  + 模块
+    1. 模块重命名: `import 模块 as 名称`。
+    2. 按需导入： `from 模块 import 工具`。
+    3. package导入：需在文件夹中建立`__init__.py`文件，并在其中引入需要的模块。
+    4. 模块构建发布：
+      1. 创建`setup.py`文件，并填写相应信息。
+      2. 构建模块：`python setup.py build`。
+      3. 生成压缩包：`python setup.py sdist`。
+      4. 安装模块：`tar -zxvf 模块压缩包`，`python setup.py install`。
+      5. 安装第三方模块：`pip install 模块`。
+  + 文件读写
+    1. 语法：
+       ```
+       # 打开文件
+       file = open("README", 'a')
+       
+       # 读取文件
+       # file.write('hello')
+       text = file.read()
+       print(text)
+       
+       # 关闭文件
+       file.close()
+       ```
+    2. 读一行：`readline()`
