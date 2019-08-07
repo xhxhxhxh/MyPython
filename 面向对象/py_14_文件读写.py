@@ -2,7 +2,7 @@
 file = open("README", 'a')
 
 # 读取文件
-file.write('hello')
+# file.write('hello')
 text = file.read()
 print(text)
 

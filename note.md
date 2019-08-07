@@ -165,6 +165,7 @@
       3. 生成压缩包：`python setup.py sdist`。
       4. 安装模块：`tar -zxvf 模块压缩包`，`python setup.py install`。
       5. 安装第三方模块：`pip install 模块`。
+    5. 使用pip命令安装：`pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple --user` 更换镜像源。
   + 文件读写
     1. 语法：
        ```
@@ -180,3 +181,4 @@
        file.close()
        ```
     2. 读一行：`readline()`
+  
