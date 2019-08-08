@@ -181,4 +181,14 @@
        file.close()
        ```
     2. 读一行：`readline()`
+## pygame
+  + 基础方法
+    1. 初始化：`pygame.init()`。
+    2. 终止游戏：`pygame.quit()`。
+    3. Rect绘制矩形：`pygame.Rect(x, y, width, height)`，可从返回值中读取相应的值，如：`rect.size`表示`(width, height)`。
+    4. 创建主窗口：`pygame.display.set_mode((480, 700))`，第一个参数便是窗口宽高。
+    5. 加载图片：`background = pygame.image.load('./images/background.png')`。
+    6. 绘制图像：`scree.blit(background, (0, 0))`。
+    7. 更新画面：`pygame.display.update()`。
+
   
