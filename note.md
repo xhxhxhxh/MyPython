@@ -97,6 +97,7 @@
   + 其他
     + `print('', end = '')`表示不换号打印。
     + 制表符：`\t`保持文本垂直方向对齐, `\n`换行。
+    + 常量：约定使用大写字母，单词之间用下划线连接。
 ## 面向对象
   + 基础语法
     1. 采用大骆驼峰命名法。
@@ -190,5 +191,7 @@
     5. 加载图片：`background = pygame.image.load('./images/background.png')`。
     6. 绘制图像：`scree.blit(background, (0, 0))`。
     7. 更新画面：`pygame.display.update()`。
+    8. 游戏时钟(控制帧率)：`clock = pygame.time.Clock()clock = pygame.time.Clock()  clock.tick(60)`。
+    9. 事件监听：`pygame.event.get()`会返回一个事件列表。
 
   
