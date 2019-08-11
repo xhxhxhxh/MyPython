@@ -193,5 +193,7 @@
     7. 更新画面：`pygame.display.update()`。
     8. 游戏时钟(控制帧率)：`clock = pygame.time.Clock()clock = pygame.time.Clock()  clock.tick(60)`。
     9. 事件监听：`pygame.event.get()`会返回一个事件列表。
+    10. 定时器：`pygame.time.set_timer(CREATE_ENEMY_EVENT, 1000)`，第一个参数为定时器事件，第二个为间隔时间。
+    11. 键盘监听：`pygame.key.get_pressed()`，返回一个列表，触发的事件值为1。
 
   
