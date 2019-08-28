@@ -195,5 +195,9 @@
     9. 事件监听：`pygame.event.get()`会返回一个事件列表。
     10. 定时器：`pygame.time.set_timer(CREATE_ENEMY_EVENT, 1000)`，第一个参数为定时器事件，第二个为间隔时间。
     11. 键盘监听：`pygame.key.get_pressed()`，返回一个列表，触发的事件值为1。
+## 多任务
+  + 多线程
+    1. 使用：`t1 = threading.Thread(target=jump) t1.start()`。
+    2. 查看线程数：`threading.enumerate()`。
 
   
