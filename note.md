@@ -199,5 +199,11 @@
   + 多线程
     1. 使用：`t1 = threading.Thread(target=jump) t1.start()`。
     2. 查看线程数：`threading.enumerate()`。
+    3. 同步锁：
+       ```
+       mutex = threading.Lock()
+       mutex.acquire()  # 上锁
+       mutex.release()  # 解锁
+       ```
 
   
