@@ -205,5 +205,17 @@
        mutex.acquire()  # 上锁
        mutex.release()  # 解锁
        ```
+    4. 创建队列：` q = multiprocessing.Queue() q.put() q.get()`用于进程间通信。
+    5. 进程池：(windows下需把任务放到main函数中执行)
+       ```
+       po = multiprocessing.Pool(3)
+
+       for i in range(0, 10):
+           # 添加十个进程
+           po.apply_async(work, (i,))
+
+       po.close() # 关闭进程池
+       po.join() # 等待进程池所有程序执行完毕
+       ```
 
   
