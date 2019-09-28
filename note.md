@@ -216,6 +216,14 @@
 
        po.close() # 关闭进程池
        po.join() # 等待进程池所有程序执行完毕
+
        ```
+## 正则表达式
+  1. 使用方法：
+     ```
+     import re
+     ret = re.match('(12){3}', '121212')
+     print(ret.group())
+     ```
 
   
